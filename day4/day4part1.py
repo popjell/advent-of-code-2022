@@ -21,7 +21,7 @@ def main():
             print(a)
             print(b)
             print(c)
-            print(d)
+            print(d) 
             check1 = int(a) <= int(c) and int(d) <= int(b)
             check2 = int(c) <= int(a) and int(b) <= int(d)
             if check1 or check2:
