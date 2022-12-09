@@ -1,0 +1,1 @@
+all these answers are bad and slow and not optimized
