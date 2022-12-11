@@ -62,14 +62,11 @@ def followtail(head, tail):
     return {"x":tail["x"],"y":tail["y"]}
 
 for i in range(len(commands)):
-    print(i)
     direction = commands[i][0]
     amount = int(commands[i][2])
     if len(commands[i]) > 3:
         amount *= 10
         amount += int(commands[i][3])
-    print(direction)
-    print(amount)
     for j in range(amount):
         first["x"] += xdirections[direction]
         first["y"] += ydirections[direction]
@@ -90,8 +87,6 @@ for i in range(len(commands)):
                 
 
 positions.sort()
-print(positions)
-print(len(positions))
 print(count)
 
 

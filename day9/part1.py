@@ -66,8 +66,6 @@ for i in range(len(commands)):
     if len(commands[i]) > 3:
         amount *= 10
         amount += int(commands[i][3])
-    print(direction)
-    print(amount)
     for j in range(amount):
         pasthead["x"] = head["x"]
         pasthead["y"] = head["y"]
@@ -75,16 +73,9 @@ for i in range(len(commands)):
         head["y"] += ydirections[direction]
         followtail()
 
-    print("head", end = ":")
-    print(head)
-    print("tail", end = ":")
-    print(tail)
-
                 
 
 positions.sort()
-print(positions)
-print(len(positions))
 print(count)
 
 
