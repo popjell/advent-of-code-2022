@@ -6,7 +6,7 @@ def main():
         print("nope")
         return
     with open(argv[1], "r") as file:
-        signal = [x for x in file.read()]
+        signal = file.read()
         length = len(signal)
         for i in range(length):
             if(i < 13):
